@@ -15,8 +15,8 @@ const Navbar = () => {
 
       <div className="flex items-center justify-between w-full">
       
-      <Link href={"/"} className="flex items-center gap-2 hover:text-gray-900 transition text-4xl">
-        <p>Noire</p>
+      <Link href={"/"} className="flex gap-items-center 2 hover:text-gray-900 transition text-4xl">
+        <p>Noirqeqerse</p>
       </Link>
       <div className="ml-40 mt-1 border border-gray-300 rounded-full flex items-center px-3 py-1.5 w-full max-w-[400px]">
       <Image className="w-7 h-7 " src={assets.search_icon} alt="search icon" />
