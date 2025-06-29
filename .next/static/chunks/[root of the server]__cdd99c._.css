@@ -376,6 +376,34 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin: 0;
 }
 
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation:after {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: .25rem;
+  width: 100%;
+  transform-origin: 100% 100%;
+  --tw-scale-x: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .3s;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.underline-animation:hover:after {
+  transform-origin: 0 100%;
+  --tw-scale-x: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .absolute {
   position: absolute;
 }

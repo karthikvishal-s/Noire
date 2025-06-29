@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full">
       
       <Link href={"/"} className="flex gap-items-center 2 hover:text-gray-900 transition text-4xl">
-        <p>Noirqeqerse</p>
+        <p>Noire</p>
       </Link>
       <div className="ml-40 mt-1 border border-gray-300 rounded-full flex items-center px-3 py-1.5 w-full max-w-[400px]">
       <Image className="w-7 h-7 " src={assets.search_icon} alt="search icon" />
@@ -28,20 +28,20 @@ const Navbar = () => {
       </div>
      
         <div className=" w-[600px] flex  justify-between items-center lg:gap-8 max-md:hidden relative -bottom-12 ">
-        <Link href="/" className="hover:text-gray-900 transition">
+        <Link href="/" className="underline-animation">
           Shop
         </Link>
-        <Link href="/all-products" className="hover:text-gray-900 transition">
+        <Link href="/all-products" className="underline-animation">
           Luxe
         </Link>
-        <Link href="/" className="hover:text-gray-900 transition">
+        <Link href="/" className="underline-animation">
           Our Story
         </Link>
-        <Link href="/" className="hover:text-gray-900 transition">
+        <Link href="/" className="underline-animation">
           The Loop
         </Link>
 
-        {isSeller && <button onClick={() => router.push('/seller')} className=" px-4 py-1.5 m">Seller</button>}
+       
 
       </div>
       
