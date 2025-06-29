@@ -6,16 +6,20 @@
     scroll-behavior: smooth;
 }
 
+
 @layer components{
   .underline-animation{
     @apply relative;
   }
   .underline-animation::after {
-    @apply absolute content-[''] w-full h-1 left-0 bottom-[-4px] bg-gray-400
-    scale-x-0 hover:scale-x-100 origin-bottom-right hover:origin-bottom-left transition-transform duration-300;
+    @apply absolute content-['']  w-full h-0.5 left-0 bottom-[-4px] bg-gray-900
+    scale-x-0 hover:scale-x-100 origin-bottom-right
+    hover:origin-bottom-left transition-transform duration-300;
     
   }
 }
+
+
 
 
 @layer base {

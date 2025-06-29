@@ -384,13 +384,13 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   position: absolute;
   left: 0;
   bottom: -4px;
-  height: .25rem;
+  height: .125rem;
   width: 100%;
   transform-origin: 100% 100%;
   --tw-scale-x: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
   transition-property: transform;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .3s;
@@ -727,6 +727,14 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .w-px {
   width: 1px;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-0 {
+  width: 0;
 }
 
 .min-w-full {
@@ -1396,6 +1404,18 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   line-height: 1rem;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[200px\] {
+  font-size: 200px;
+}
+
+.text-\[90px\] {
+  font-size: 90px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1473,6 +1493,20 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[20pxs\] {
+  color: 20pxs;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity, 1));
 }
 
 .line-through {

@@ -788,7 +788,7 @@ const Navbar = ()=>{
     _s();
     const { isSeller, router } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$AppContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 mb-0 pb-20 border-gray-300 text-gray-700 ",
+        className: "flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 mb-0 pb-20 border-gray-300 text-gray-600 ",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-col justify-around items-center w-full max-w-6xl mx-auto",
@@ -827,20 +827,36 @@ const Navbar = ()=>{
                                 lineNumber: 21,
                                 columnNumber: 7
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "flex items-center gap-2  transition ml-40",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["assets"].user_icon,
                                     alt: "user icon ",
-                                    className: "w-10 rounded-full border  "
+                                    className: "w-8 "
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.jsx",
                                     lineNumber: 25,
-                                    columnNumber: 11
+                                    columnNumber: 7
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.jsx",
                                 lineNumber: 24,
+                                columnNumber: 7
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["assets"].cart,
+                                    alt: "user icon",
+                                    className: "w-8"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Navbar.jsx",
+                                    lineNumber: 28,
+                                    columnNumber: 7
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Navbar.jsx",
+                                lineNumber: 27,
                                 columnNumber: 7
                             }, this)
                         ]
@@ -850,48 +866,48 @@ const Navbar = ()=>{
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: " w-[600px] flex  justify-between items-center lg:gap-8 max-md:hidden relative -bottom-12 ",
+                        className: "text-xl w-[600px] flex  justify-between items-center lg:gap-8 max-md:hidden relative -bottom-12 ",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
-                                className: "underline-animation",
+                                className: "hover:text-gray-900 underline-animation",
                                 children: "Shop"
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.jsx",
-                                lineNumber: 31,
+                                lineNumber: 33,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/all-products",
-                                className: "underline-animation",
+                                className: "hover:text-gray-900 underline-animation",
                                 children: "Luxe"
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.jsx",
-                                lineNumber: 34,
+                                lineNumber: 36,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
-                                className: "underline-animation",
+                                className: "hover:text-gray-900 underline-animation",
                                 children: "Our Story"
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.jsx",
-                                lineNumber: 37,
+                                lineNumber: 39,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
-                                className: "underline-animation",
+                                className: "hover:text-gray-900 underline-animation",
                                 children: "The Loop"
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.jsx",
-                                lineNumber: 40,
+                                lineNumber: 42,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Navbar.jsx",
-                        lineNumber: 30,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this)
                 ]
@@ -904,7 +920,7 @@ const Navbar = ()=>{
                 className: "hidden md:flex items-center gap-4 "
             }, void 0, false, {
                 fileName: "[project]/components/Navbar.jsx",
-                lineNumber: 50,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -916,7 +932,7 @@ const Navbar = ()=>{
                         children: "Seller Dashboard"
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.jsx",
-                        lineNumber: 56,
+                        lineNumber: 58,
                         columnNumber: 22
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -927,18 +943,18 @@ const Navbar = ()=>{
                             className: "w-7 h-7"
                         }, void 0, false, {
                             fileName: "[project]/components/Navbar.jsx",
-                            lineNumber: 58,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.jsx",
-                        lineNumber: 57,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Navbar.jsx",
-                lineNumber: 55,
+                lineNumber: 57,
                 columnNumber: 7
             }, this)
         ]
