@@ -24,7 +24,7 @@ const Navbar = () => {
       <Link href="/">
       <Image src={assets.user_icon} alt="user icon " className="w-8 "  />
       </Link>
-      <Link href="/">
+      <Link href="/cart">
       <Image src={assets.cart} alt="user icon" className="w-8"  />
       </Link>
       </div>
