@@ -47,7 +47,7 @@ const HeaderSlider = () => {
   };
 
   return (
-    <div className="relative max-w-9xl ">
+    <div className="relative max-w-9xl overflow-hidden">
       <div
   className="flex transition-transform duration-700 ease-in-out"
   style={{ transform: `translateX(-${currentSlide * 100}%)`}}
