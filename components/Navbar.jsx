@@ -41,7 +41,7 @@ ${isMenuOpen ? 'max-h-96 py-4 shadow-lg border-b border-gray-200' : 'max-h-0 py-
           </div>
 
           <div className="hidden md:flex items-center justify-between w-full h-full">
-            <Link href="/" className="text-4xl font-semibold">Noire</Link>
+            <Link href="/" className="text-4xl hover:text-black">Noire</Link>
 
             <div className="ml-12 border border-gray-300 rounded-full flex items-center px-3 py-1.5 w-full max-w-[400px]">
               <Image className="w-6 h-6" src={assets.search_icon} alt="search icon" />
