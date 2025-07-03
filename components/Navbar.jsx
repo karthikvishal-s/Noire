@@ -50,10 +50,21 @@ ${isMenuOpen ? 'max-h-96 py-4 shadow-lg border-b border-gray-200' : 'max-h-0 py-
   </div>
 
 
+
+
             <div className="border border-gray-300 rounded-full flex items-center px-3 py-1.5 w-full max-w-[400px]">
               <Image className="w-6 h-6" src={assets.search_icon} alt="search icon" />
+              <form>
+                <input
+                  type="text"
+                  placeholder="Search for products..."
+                  className="w-full h-full outline-none px-2 text-gray-700 ml-1"/>
+              </form>
             </div>
 
+            
+            
+            
             <div className="flex gap-10 items-center">
               <Link href="/">
                 <Image src={assets.user_icon} alt="user icon" className="w-7 h-7" />

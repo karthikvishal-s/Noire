@@ -3,8 +3,10 @@ import React from 'react'
 const Persona = () => {
   return (
     <div>
+        <div className='text-3xl text-center'>
         Persona
-        <div className='flex gap-40 items-center justify-center flex-wrap pt-14 '>
+        </div>
+        <div className='flex gap-40 items-center justify-center flex-wrap '>
         
         <div className="items-center justify-center pt-14">
             

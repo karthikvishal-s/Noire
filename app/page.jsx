@@ -17,12 +17,9 @@ const Home = () => {
         <HeaderSlider />
         <Persona/>
         <FeaturedProduct />
-        <HomeProducts />
         
-        <Banner />
-        <NewsLetter />
       </div>
-      <Footer />
+      
     </>
   );
 };
