@@ -10,8 +10,9 @@ const HeaderSlider = () => {
       offer: "Limited Time Offer 30% Off",
       buttonText1: "Buy now",
       buttonText2: "Find more",
-      link:"",
+      link: "",
       imgSrc: assets.ethnic,
+      imgMobileSrc: assets.ethnic_mobile,
     },
     {
       id: 2,
@@ -19,8 +20,9 @@ const HeaderSlider = () => {
       offer: "Hurry up only few lefts!",
       buttonText1: "Shop Now",
       buttonText2: "Explore Deals",
-      link:"",
+      link: "",
       imgSrc: assets.kids,
+      imgMobileSrc: assets.kids_mobile,
     },
     {
       id: 3,
@@ -28,8 +30,9 @@ const HeaderSlider = () => {
       offer: "Exclusive Deal 40% Off",
       buttonText1: "Order Now",
       buttonText2: "Learn More",
-      link:"",
+      link: "",
       imgSrc: assets.tops,
+      imgMobileSrc: assets.tops_mobile,
     },
   ];
 
@@ -49,40 +52,39 @@ const HeaderSlider = () => {
   return (
     <div className="relative max-w-9xl overflow-hidden">
       <div
-  className="flex transition-transform duration-700 ease-in-out"
-  style={{ transform: `translateX(-${currentSlide * 100}%)`}}
->
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
 
         {sliderData.map((slide, index) => (
           <div
             key={slide.id}
             className="flex flex-col-reverse min-h-full md:flex-row items-center justify-between  min-w-full ">
-          
 
-            
-            <div className="flex items-center flex-1 justify-center">
+            <div className="flex items-center flex-1 justify-center w-full">
               <Image
-                className="w-full h-full object-contain shadow-2xl"
+                className="block md:hidden w-full object-contain shadow-2xl"
+                src={slide.imgMobileSrc || slide.imgSrc} // fallback to desktop if not given
+                alt={`Slide ${index + 1} Mobile`}
+              />
+
+              <Image
+                className="hidden md:block w-full object-contain shadow-2xl"
                 src={slide.imgSrc}
-                alt={`Slide ${index + 1}`}
+                alt={`Slide ${index + 1} Desktop`}
               />
             </div>
           </div>
         ))}
       </div>
 
-      
-      
-      
-      
       <div className="flex flex-col items-end justify-center gap-2 mt-8 relative -top-44 -left-10">
         {sliderData.map((_, index) => (
           <div
             key={index}
             onClick={() => handleSlideChange(index)}
-            className={`h-4 w-4  cursor-pointer ${
-              currentSlide === index ? "bg-gray-700" : "bg-gray-700/30"
-            }`}
+            className={`h-4 w-4  cursor-pointer ${currentSlide === index ? "bg-gray-700" : "bg-gray-700/30"
+              }`}
           ></div>
         ))}
       </div>

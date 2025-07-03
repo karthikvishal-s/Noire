@@ -2,8 +2,11 @@ import logo from "./logo.svg";
 import cart from "./shopping-bag.png"
 import search_icon from "./search_icon.svg";
 import ethnic from "./ethinc-pic.jpg";
+import ethnic_mobile from "./ethnic_mobile.jpg"
 import kids from "./kids.jpg.webp";
+import kids_mobile from "./kids_mobile.jpg";
 import tops from "./Web-Tops.jpg";
+import tops_mobile from "./tops_mobile.jpg";
 import user_icon from "./user_icon.svg";
 import cart_icon from "./cart_icon.svg";
 import add_icon from "./add_icon.svg";
@@ -54,7 +57,10 @@ import product_details_page_apple_earphone_image5 from "./product_details_page_a
 export const assets = {
   cart,
   logo,
-  kids,tops,
+  kids,
+  kids_mobile,
+  tops,
+  tops_mobile,
   search_icon,
   user_icon,
   cart_icon,
@@ -102,6 +108,7 @@ export const assets = {
   product_details_page_apple_earphone_image4,
   product_details_page_apple_earphone_image5,
   ethnic,
+  ethnic_mobile,
   checkmark
 };
 
