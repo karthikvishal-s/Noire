@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
+import { useSwipeable } from "react-swipeable";
 
 const HeaderSlider = () => {
   const sliderData = [
@@ -37,38 +38,51 @@ const HeaderSlider = () => {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const autoSlideDelay = 5000;
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const timeout = setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderData.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [sliderData.length]);
+    }, autoSlideDelay);
+
+    return () => clearTimeout(timeout);
+  }, [currentSlide, sliderData.length]);
 
   const handleSlideChange = (index) => {
     setCurrentSlide(index);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () =>
+      setCurrentSlide((prev) => (prev + 1) % sliderData.length),
+    onSwipedRight: () =>
+      setCurrentSlide((prev) =>
+        prev === 0 ? sliderData.length - 1 : prev - 1
+      ),
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className="relative max-w-9xl overflow-hidden">
+    <div {...handlers} className="relative max-w-9xl overflow-hidden">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
-
         {sliderData.map((slide, index) => (
           <div
             key={slide.id}
-            className="flex flex-col-reverse min-h-full md:flex-row items-center justify-between  min-w-full ">
-
+            className="flex flex-col-reverse min-h-full md:flex-row items-center justify-between min-w-full"
+          >
             <div className="flex items-center flex-1 justify-center w-full">
               <Image
+                draggable={false}
                 className="block md:hidden w-full object-contain shadow-2xl"
-                src={slide.imgMobileSrc || slide.imgSrc} // fallback to desktop if not given
+                src={slide.imgMobileSrc || slide.imgSrc}
                 alt={`Slide ${index + 1} Mobile`}
               />
-
               <Image
+                draggable={false}
                 className="hidden md:block w-full object-contain shadow-2xl"
                 src={slide.imgSrc}
                 alt={`Slide ${index + 1} Desktop`}
