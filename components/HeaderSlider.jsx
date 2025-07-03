@@ -56,13 +56,13 @@ const HeaderSlider = () => {
         {sliderData.map((slide, index) => (
           <div
             key={slide.id}
-            className="flex flex-col-reverse min-h-[850px] md:flex-row items-center justify-between  min-w-full"
-          >
+            className="flex flex-col-reverse min-h-full md:flex-row items-center justify-between  min-w-full ">
+          
 
             
             <div className="flex items-center flex-1 justify-center">
               <Image
-                className="w-screen h-[1240px] object-cover shadow-lg"
+                className="w-full h-full object-contain shadow-lg"
                 src={slide.imgSrc}
                 alt={`Slide ${index + 1}`}
               />
