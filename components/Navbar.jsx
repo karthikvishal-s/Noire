@@ -39,8 +39,16 @@ ${isMenuOpen ? 'max-h-96 py-4 shadow-lg border-b border-gray-200' : 'max-h-0 py-
             <Link href="/" onClick={() => setIsMenuOpen(false)}>The Loop</Link>
           </div>
 
-          <div className="hidden md:flex items-center justify-between w-full h-full">
-            <Link href="/" className="text-4xl hover:text-black">Noire</Link>
+         
+         
+         
+         
+         
+          <div className="hidden md:flex justify-between w-full h-full">
+  <div className="flex items-start" >
+  <Link href="/" className="text-3xl hover:text-black">Noire</Link>
+  </div>
+
 
             <div className="border border-gray-300 rounded-full flex items-center px-3 py-1.5 w-full max-w-[400px]">
               <Image className="w-6 h-6" src={assets.search_icon} alt="search icon" />
@@ -56,6 +64,11 @@ ${isMenuOpen ? 'max-h-96 py-4 shadow-lg border-b border-gray-200' : 'max-h-0 py-
             </div>
           </div>
 
+          
+          
+          
+          
+          
           <div className="hidden md:flex text-xl w-[600px] flex  justify-between items-center lg:gap-8 mt-7 mb-6">
             <Link href="/" className="hover:text-gray-900 underline-animation">
               Shop

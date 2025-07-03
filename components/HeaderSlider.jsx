@@ -62,7 +62,7 @@ const HeaderSlider = () => {
             
             <div className="flex items-center flex-1 justify-center">
               <Image
-                className="w-full h-full object-contain shadow-lg"
+                className="w-full h-full object-contain shadow-2xl"
                 src={slide.imgSrc}
                 alt={`Slide ${index + 1}`}
               />
