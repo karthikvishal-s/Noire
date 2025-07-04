@@ -2,7 +2,7 @@ import React from 'react'
 
 const Persona = () => {
   return (
-    <div>
+    <div className='overflow-x-auto'>
         <div className='text-3xl text-center'>
         Persona
         </div>
@@ -20,6 +20,16 @@ const Persona = () => {
 
         <div className="flex flex-col items-center justify-center pt-14">
             
+            <img
+            src="/persona-image.jpg"
+            alt="Persona"
+            className="w-64 h-64 rounded-full shadow-lg mb-4"
+            />
+            
+        </div>
+
+        <div className="flex flex-col items-center justify-center pt-14">
+           
             <img
             src="/persona-image.jpg"
             alt="Persona"
