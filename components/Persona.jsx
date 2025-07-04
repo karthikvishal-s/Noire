@@ -1,52 +1,27 @@
 import React from 'react'
-
+import PersonaCard from './PersonaCard'
+import { assets } from '@/assets/assets'
+import Image from 'next/image'
 const Persona = () => {
   return (
-    <div className='overflow-x-auto'>
+    <div className='max-h-[400px]  '>
         <div className='text-3xl text-center'>
         Persona
         </div>
-        <div className='flex gap-40 items-center justify-center flex-wrap '>
+        <div className='flex overflow-x-scroll flex-col gap-40 flex-wrap h-[300px] mt-20 ml-20 mr-20'>
+     
         
-        <div className="items-center justify-center pt-14">
-            
-            <img
-            src="/persona-image.jpg"
-            alt="Persona"
-            className="w-64 h-64 rounded-full shadow-lg mb-4"
-            />
-            
-        </div>
-
-        <div className="flex flex-col items-center justify-center pt-14">
-            
-            <img
-            src="/persona-image.jpg"
-            alt="Persona"
-            className="w-64 h-64 rounded-full shadow-lg mb-4"
-            />
-            
-        </div>
-
-        <div className="flex flex-col items-center justify-center pt-14">
-           
-            <img
-            src="/persona-image.jpg"
-            alt="Persona"
-            className="w-64 h-64 rounded-full shadow-lg mb-4"
-            />
-            
-        </div>
-
-        <div className="flex flex-col items-center justify-center pt-14">
-           
-            <img
-            src="/persona-image.jpg"
-            alt="Persona"
-            className="w-64 h-64 rounded-full shadow-lg mb-4"
-            />
-            
-        </div>
+        <Image src={assets.kids_mobile} alt="Kids" className='w-64 h-64 rounded-full shadow-lg mb-4 object-cover' />
+        <Image src={assets.ethnic_mobile} alt="Kids" className='w-64 h-64 rounded-full shadow-lg mb-4  object-cover' />
+        
+        <Image src={assets.ethnic_mobile} alt="Kids" className='w-64 h-64 rounded-full shadow-lg mb-4 object-cover' />
+        <Image src={assets.ethnic_mobile} alt="Kids" className='w-64 h-64 rounded-full shadow-lg mb-4 object-cover' />
+        <Image src={assets.ethnic_mobile} alt="Kids" className='w-64 h-64 rounded-full shadow-lg mb-4 object-cover' />
+        <Image src={assets.ethnic_mobile} alt="Kids" className='w-64 h-64 rounded-full shadow-lg mb-4 object-cover' />
+        <Image src={assets.kids} alt="Kids" className='w-64 h-64 rounded-full shadow-lg mb-4 object-cover' />
+        
+        
+       
         
     </div>
     </div>
