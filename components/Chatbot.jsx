@@ -36,7 +36,7 @@ const Chatbot = () => {
     if (lower.includes('return')) reply = 'You can return items within 30 days of delivery.';
     else if (lower.includes('order status')) reply = 'Please visit Profile → Orders to check status.';
     else if (lower.includes('delivery') || lower.includes('delivered') ||lower.includes('deliver'))     reply = 'Delivery usually takes 3‑5 business days.';
-
+    else if (lower.includes('cancel')) reply = 'You can cancel your order within 1 hour of placing it.';
     newMsgs.push({ sender: 'bot', text: reply });
     setMessages(newMsgs);
     setInput('');
