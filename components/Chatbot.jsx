@@ -7,7 +7,7 @@ import { IoArrowForwardSharp } from 'react-icons/io5';
 const Chatbot = () => {
   const [isOpen, setIsOpen]   = useState(false);
   const [messages, setMessages] = useState([
-    { sender: 'bot', text: 'Hi! How can I help you today?' },
+    { sender: 'bot', text: 'Hi! I am Noire ,I am here to clarify your doubts regarding our website' },
   ]);
   const [input, setInput] = useState('');
 
@@ -36,7 +36,18 @@ const Chatbot = () => {
     if (lower.includes('return')) reply = 'You can return items within 30 days of delivery.';
     else if (lower.includes('order status')) reply = 'Please visit Profile → Orders to check status.';
     else if (lower.includes('delivery') || lower.includes('delivered') ||lower.includes('deliver'))     reply = 'Delivery usually takes 3‑5 business days.';
-    else if (lower.includes('cancel')) reply = 'You can cancel your order within 1 hour of placing it.';
+    else if (lower.includes('cancel')) reply = 'You can cancel your order within 1 hour of placing it.Please visit Orders → Cancel Order.';
+    else if (lower.includes('exchange')) reply = 'Exchanges are processed within 5-7 business days after approval.';
+    else if (lower.includes('payment')) reply = 'We accept all major credit cards, PayPal, and bank transfers.';
+    else if (lower.includes('track')) reply = 'You can track your order in the Orders section of your profile.';
+    else if (lower.includes('warranty')) reply = 'All products come with a 1-year warranty.';
+    else if (lower.includes('complaint') || lower.includes('issue')) reply = 'Please contact our support team for assistance with complaints.';
+    else if (lower.includes('product') || lower.includes('item')) reply = 'Please provide the product name or ID for assistance.';
+    else if (lower.includes('size') || lower.includes('fit')) reply = 'Please refer to our size guide for accurate measurements.';      
+    else if (lower.includes('refund')) reply = 'Refunds are processed within 5-7 business days after approval.';
+    else if (lower.includes('help') || lower.includes('support')) reply = 'How can I assist you further?';
+    else if (lower.includes('hi') || lower.includes('hello')) reply = 'Hello! How can I assist you today?';
+    else if (lower.includes('thank you') || lower.includes('thanks')) reply = 'You are welcome!';
     newMsgs.push({ sender: 'bot', text: reply });
     setMessages(newMsgs);
     setInput('');

@@ -7,11 +7,13 @@ const Persona = () => {
     <div className='max-h-[400px]  '>
         <div className='text-3xl text-center'>
         Persona
+        <div className='w-16 h-0.5 bg-orange-600 mt-2 mx-auto'></div>
+        
         </div>
-        <div className='flex overflow-x-scroll flex-col gap-40 flex-wrap h-[200px] mt-10 ml-20 mr-20'>
+        <div className='flex overflow-x-scroll flex-col gap-40 flex-wrap h-[200px] mt-10 '>
      
         
-        <Image src={assets.kids_mobile} alt="Kids" className='w-[180px] h-[180px] rounded-full shadow-lg mb-4 object-cover' />
+        <Image src={assets.kids_mobile} alt="Kids" className='w-[180px] h-[180px] rounded-full shadow-lg mb-4 object-cover ml-15' />
         <Image src={assets.ethnic_mobile} alt="Kids" className='w-[180px] h-[180px] rounded-full shadow-lg mb-4  object-cover' />
         
         <Image src={assets.ethnic_mobile} alt="Kids" className='w-[180px] h-[180px] rounded-full shadow-lg mb-4 object-cover' />
