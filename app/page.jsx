@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
 import Persona from "@/components/Persona";
+import ModeToggle from "@/components/ModeToggle";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <Banner />
         <NewsLetter />
         <Chatbot />
+
   
         <Footer />
         
